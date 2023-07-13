@@ -1,9 +1,10 @@
 import pygsheets
 import random
 
+
 class pygsheetsExt:
 
-    gc = pygsheets.authorize(service_account_file="mypython_secret_id.json")
+    gc = pygsheets.authorize(service_account_file="google_sheets_util/mypython_secret_id.json")
     sh = gc.open('anekdoty')
 
     def getData(sheetName):
