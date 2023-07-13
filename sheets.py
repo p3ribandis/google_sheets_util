@@ -3,8 +3,8 @@ import random
 
 class pygsheetsExt:
 
-    gc = pygsheets.authorize(service_account_file="project/mypython_secret_id.json")
-    sh = gc.open('pythonTest')
+    gc = pygsheets.authorize(service_account_file="mypython_secret_id.json")
+    sh = gc.open('anekdoty')
 
     def getData(sheetName):
         wks = pygsheetsExt.sh.worksheet_by_title(sheetName)
